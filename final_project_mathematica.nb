@@ -1,0 +1,534 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     19909,        526]
+NotebookOptionsPosition[     16863,        477]
+NotebookOutlinePosition[     17254,        493]
+CellTagsIndexPosition[     17211,        490]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Dsolve", "[", 
+  RowBox[{"{", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "/", "\[Xi]"}], ")"}], "^", "2"}], ")"}], " ", "*", " ", 
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"\[Xi]", "^", "2"}], " ", "*", "  ", 
+         RowBox[{
+          RowBox[{"\[Theta]", "'"}], "[", "\[Xi]", "]"}]}], ",", " ", 
+        "\[Xi]"}], "]"}]}], "+", " ", 
+     RowBox[{
+      RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], "^", "n"}]}], "  ", "==", " ", 
+    "0"}], " ", "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.914127181579586*^9, 3.9141271890545807`*^9}, {
+   3.914127245165104*^9, 3.9141272690297337`*^9}, {3.914127338228545*^9, 
+   3.914127342945149*^9}, 3.9141277343040533`*^9, {3.9141278333086557`*^9, 
+   3.914127847282597*^9}, {3.9141279141955767`*^9, 3.914127941280951*^9}, {
+   3.914128122387208*^9, 3.91412817415693*^9}, {3.914128284500061*^9, 
+   3.9141283342502317`*^9}, 3.914128553247004*^9},
+ CellLabel->"In[33]:=",ExpressionUUID->"e6ede73a-b299-424c-a0f5-a1097011b286"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Dsolve", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], "n"], "+", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"2", " ", "\[Xi]", " ", 
+         RowBox[{
+          SuperscriptBox["\[Theta]", "\[Prime]",
+           MultilineFunction->None], "[", "\[Xi]", "]"}]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[Xi]", "2"], " ", 
+         RowBox[{
+          SuperscriptBox["\[Theta]", "\[Prime]\[Prime]",
+           MultilineFunction->None], "[", "\[Xi]", "]"}]}]}], 
+       SuperscriptBox["\[Xi]", "2"]]}], "\[Equal]", "0"}], "}"}], "]"}], 
+  "\[AliasDelimiter]"}]], "Input",
+ CellChangeTimes->{{3.914129672953286*^9, 
+  3.914129672955927*^9}},ExpressionUUID->"8dbbe393-984a-474e-a9a5-\
+a20ced05737f"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.91412863167671*^9, 3.914128632725786*^9}, {
+  3.914128694775332*^9, 3.914128802191421*^9}, {3.9141294740408382`*^9, 
+  3.914129476397707*^9}, {3.914130551679781*^9, 
+  3.914130570259631*^9}},ExpressionUUID->"10924578-cd5e-4fa0-a6ea-\
+b5833d76ab94"],
+
+Cell[BoxData[
+ RowBox[{"AsymptoticDSolveValue", "[", 
+  RowBox[{
+   RowBox[{"{", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "/", "\[Xi]"}], ")"}], "^", "2"}], ")"}], " ", "*", 
+        " ", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"\[Xi]", "^", "2"}], " ", "*", "  ", 
+           RowBox[{
+            RowBox[{"\[Theta]", "'"}], "[", "\[Xi]", "]"}]}], ",", " ", 
+          "\[Xi]"}], "]"}]}], "+", " ", 
+       RowBox[{
+        RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], "^", "n"}]}], "  ", "==", 
+      " ", "0"}], ",", 
+     RowBox[{
+      RowBox[{"\[Theta]", "[", "0", "]"}], " ", "==", " ", "1"}]}], " ", 
+    "}"}], ",", 
+   RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"\[Xi]", ",", "0", ",", "6"}], "}"}], ",", "n"}], " ", "]"}]], \
+"Input",
+ CellChangeTimes->{{3.914128825164009*^9, 3.91412887399753*^9}, {
+  3.9141289487815037`*^9, 3.914128949619019*^9}, {3.914129095119835*^9, 
+  3.9141291028239717`*^9}, {3.9141291930575323`*^9, 3.914129208590819*^9}},
+ CellLabel->"In[52]:=",ExpressionUUID->"6e6d7632-adb2-407f-98c5-98639a08ed66"],
+
+Cell[BoxData[
+ RowBox[{"AsymptoticDSolveValue", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], "n"], "+", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"2", " ", "\[Xi]", " ", 
+          RowBox[{
+           SuperscriptBox["\[Theta]", "\[Prime]",
+            MultilineFunction->None], "[", "\[Xi]", "]"}]}], "+", 
+         RowBox[{
+          SuperscriptBox["\[Xi]", "2"], " ", 
+          RowBox[{
+           SuperscriptBox["\[Theta]", "\[Prime]\[Prime]",
+            MultilineFunction->None], "[", "\[Xi]", "]"}]}]}], 
+        SuperscriptBox["\[Xi]", "2"]]}], "\[Equal]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"\[Theta]", "[", "0", "]"}], "\[Equal]", "1"}]}], "}"}], ",", 
+   RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Xi]", ",", "0", ",", "6"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.914129443097684*^9, 3.914129443247838*^9}},
+ CellLabel->"",ExpressionUUID->"388229e5-6803-43a7-9d32-2721d2547434"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AsymptoticDSolveValue", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"\[Xi]", " ", "*", " ", 
+        SuperscriptBox[
+         RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], "n"]}], "+", 
+       RowBox[{"2", "  ", 
+        RowBox[{
+         SuperscriptBox["\[Theta]", "\[Prime]",
+          MultilineFunction->None], "[", "\[Xi]", "]"}]}], "+", 
+       RowBox[{"\[Xi]", " ", 
+        RowBox[{
+         SuperscriptBox["\[Theta]", "\[Prime]\[Prime]",
+          MultilineFunction->None], "[", "\[Xi]", "]"}]}]}], "\[Equal]", 
+      "0"}], ",", 
+     RowBox[{
+      RowBox[{"\[Theta]", "[", "0", "]"}], "\[Equal]", "1"}]}], "}"}], ",", 
+   RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Xi]", ",", "0", ",", "4"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9141293965613213`*^9, 3.914129456205763*^9}},
+ CellLabel->"In[64]:=",ExpressionUUID->"4cd24abb-1a66-4fed-a500-8cc08cb20628"],
+
+Cell[BoxData[
+ RowBox[{"1", "-", 
+  FractionBox[
+   SuperscriptBox["\[Xi]", "2"], "6"], "+", 
+  FractionBox[
+   RowBox[{"n", " ", 
+    SuperscriptBox["\[Xi]", "4"]}], "120"]}]], "Output",
+ CellChangeTimes->{3.914130070080352*^9},
+ CellLabel->"Out[64]=",ExpressionUUID->"3100d7af-b606-4f38-aece-56308337075b"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{"1", "-", 
+  FractionBox[
+   SuperscriptBox["\[Xi]", "2"], "6"], "+", 
+  FractionBox[
+   RowBox[{"n", " ", 
+    SuperscriptBox["\[Xi]", "4"]}], "120"]}], "\[IndentingNewLine]", 
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"\[Xi]", " ", "*", " ", 
+        SuperscriptBox[
+         RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], "n"]}], "+", 
+       RowBox[{"2", "  ", 
+        RowBox[{
+         SuperscriptBox["\[Theta]", "\[Prime]",
+          MultilineFunction->None], "[", "\[Xi]", "]"}]}], "+", 
+       RowBox[{"\[Xi]", " ", 
+        RowBox[{
+         SuperscriptBox["\[Theta]", "\[Prime]\[Prime]",
+          MultilineFunction->None], "[", "\[Xi]", "]"}]}]}], "\[Equal]", 
+      "0"}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"\[Theta]", "'"}], "[", "0", "]"}], "\[Equal]", "0"}], ",", 
+     " ", 
+     RowBox[{
+      RowBox[{"\[Theta]", "[", "0", "]"}], "\[Equal]", "1"}]}], "}"}], ",", 
+   " ", 
+   RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Xi]", ",", "0", ",", "\[Infinity]"}], " ", "}"}]}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.9141299475383787`*^9, 3.914129977504264*^9}, {
+  3.914130016244999*^9, 3.914130060786478*^9}},
+ CellLabel->"In[66]:=",ExpressionUUID->"418d0068-c9a8-4cf4-a282-32e440a97af4"],
+
+Cell[BoxData[
+ RowBox[{"1", "-", 
+  FractionBox[
+   SuperscriptBox["\[Xi]", "2"], "6"], "+", 
+  FractionBox[
+   RowBox[{"n", " ", 
+    SuperscriptBox["\[Xi]", "4"]}], "120"]}]], "Input",
+ CellChangeTimes->{3.914130107822036*^9},
+ CellLabel->"",ExpressionUUID->"762a149f-d27a-4da0-b838-3f250b865588"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"\[Xi]", " ", "*", "  ", 
+        SuperscriptBox[
+         RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], "1"]}], "+", 
+       RowBox[{"2", " ", "*", " ", 
+        RowBox[{
+         SuperscriptBox["\[Theta]", "\[Prime]",
+          MultilineFunction->None], "[", "\[Xi]", "]"}]}], "+", 
+       RowBox[{"\[Xi]", " ", 
+        RowBox[{
+         SuperscriptBox["\[Theta]", "\[Prime]\[Prime]",
+          MultilineFunction->None], "[", "\[Xi]", "]"}]}]}], "\[Equal]", 
+      "0"}], ",", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["\[Theta]", "\[Prime]",
+        MultilineFunction->None], "[", "0", "]"}], "\[Equal]", "0"}], ",", 
+     RowBox[{
+      RowBox[{"\[Theta]", "[", "0", "]"}], "\[Equal]", "1"}]}], "}"}], ",", 
+   RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Xi]", ",", "0", ",", "\[Infinity]"}], "}"}]}], "]"}]], "Input",\
+
+ CellChangeTimes->{3.914130798106143*^9},
+ CellLabel->"In[78]:=",ExpressionUUID->"4292fde5-f137-4c7b-ad0e-ac83c588d267"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "incnst", 
+   "\"Inconsistent or redundant transcendental equation. After reduction, the \
+bad equation is \\!\\(\\*RowBox[{\\\"\[ImaginaryI]\\\", \\\" \\\", RowBox[{\\\
+\"(\\\", RowBox[{RowBox[{\\\"2\\\", \\\" \\\", \\\"\[ImaginaryI]\\\", \\\" \\\
+\", TemplateBox[List[\\\"1\\\"], \\\"C\\\"]}], \\\"+\\\", TemplateBox[List[\\\
+\"2\\\"], \\\"C\\\"]}], \\\")\\\"}]}]\\) == 0.\"", 2, 78, 25, 
+   20584805842784696934, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9141307989932003`*^9},
+ CellLabel->
+  "During evaluation of \
+In[78]:=",ExpressionUUID->"7e2e32d4-493e-4db2-a112-1fb61e815594"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "incnst", 
+   "\"Inconsistent or redundant transcendental equation. After reduction, the \
+bad equation is \\!\\(\\*RowBox[{RowBox[{\\\"2\\\", \\\" \\\", \\\"\
+\[ImaginaryI]\\\", \\\" \\\", TemplateBox[List[\\\"1\\\"], \\\"C\\\"]}], \
+\\\"+\\\", TemplateBox[List[\\\"2\\\"], \\\"C\\\"]}]\\) == 0.\"", 2, 78, 26, 
+   20584805842784696934, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.914130799016212*^9},
+ CellLabel->
+  "During evaluation of \
+In[78]:=",ExpressionUUID->"91ad4779-f9cc-4be9-bdcd-cecb524a0df2"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "ifun", 
+   "\"Inverse functions are being used by \
+\\!\\(\\*RowBox[{\\\"Solve\\\"}]\\), so some solutions may not be found; use \
+Reduce for complete solution information.\"", 2, 78, 27, 20584805842784696934,
+    "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.914130799022881*^9},
+ CellLabel->
+  "During evaluation of \
+In[78]:=",ExpressionUUID->"2e484169-17f3-429c-af5c-8981064a35f7"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], "\[Rule]", 
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"\[ImaginaryI]", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "\[ImaginaryI]"}], " ", "\[Xi]"}]], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Xi]"}]]}], ")"}]}], 
+      RowBox[{"2", " ", "\[Xi]"}]]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.914130799028555*^9},
+ CellLabel->"Out[78]=",ExpressionUUID->"3d3f9a11-89a0-4cf9-bcd0-1ef98a032f0e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{"DSolve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"\[Xi]", " ", "*", "  ", 
+         SuperscriptBox[
+          RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], "1"]}], "+", 
+        RowBox[{"2", " ", "*", " ", 
+         RowBox[{
+          SuperscriptBox["\[Theta]", "\[Prime]",
+           MultilineFunction->None], "[", "\[Xi]", "]"}]}], "+", 
+        RowBox[{"\[Xi]", " ", 
+         RowBox[{
+          SuperscriptBox["\[Theta]", "\[Prime]\[Prime]",
+           MultilineFunction->None], "[", "\[Xi]", "]"}]}]}], "\[Equal]", 
+       "0"}], ",", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["\[Theta]", "\[Prime]",
+         MultilineFunction->None], "[", "0", "]"}], "\[Equal]", "0"}], ",", 
+      RowBox[{
+       RowBox[{"\[Theta]", "[", "0", "]"}], "\[Equal]", "1"}]}], "}"}], ",", 
+    RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Xi]", ",", "0", ",", "\[Infinity]"}], "}"}]}], "]"}], "]"}]], \
+"Input",
+ CellChangeTimes->{{3.914130110488267*^9, 3.914130131373349*^9}, {
+   3.9141302574721737`*^9, 3.914130262211514*^9}, {3.914130344965249*^9, 
+   3.9141303457844267`*^9}, {3.914130501447785*^9, 3.9141305020374613`*^9}, 
+   3.914130791287342*^9},
+ CellLabel->"In[79]:=",ExpressionUUID->"58fa2041-4aee-4e6a-9453-4c16b1c7b570"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "incnst", 
+   "\"Inconsistent or redundant transcendental equation. After reduction, the \
+bad equation is \\!\\(\\*RowBox[{\\\"\[ImaginaryI]\\\", \\\" \\\", RowBox[{\\\
+\"(\\\", RowBox[{RowBox[{\\\"2\\\", \\\" \\\", \\\"\[ImaginaryI]\\\", \\\" \\\
+\", TemplateBox[List[\\\"1\\\"], \\\"C\\\"]}], \\\"+\\\", TemplateBox[List[\\\
+\"2\\\"], \\\"C\\\"]}], \\\")\\\"}]}]\\) == 0.\"", 2, 79, 28, 
+   20584805842784696934, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.914130503666123*^9, 3.914130802034176*^9},
+ CellLabel->
+  "During evaluation of \
+In[79]:=",ExpressionUUID->"60f5fee5-8c43-4d8f-a536-8fdbc9ed43b4"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "incnst", 
+   "\"Inconsistent or redundant transcendental equation. After reduction, the \
+bad equation is \\!\\(\\*RowBox[{RowBox[{\\\"2\\\", \\\" \\\", \\\"\
+\[ImaginaryI]\\\", \\\" \\\", TemplateBox[List[\\\"1\\\"], \\\"C\\\"]}], \
+\\\"+\\\", TemplateBox[List[\\\"2\\\"], \\\"C\\\"]}]\\) == 0.\"", 2, 79, 29, 
+   20584805842784696934, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.914130503666123*^9, 3.914130802066777*^9},
+ CellLabel->
+  "During evaluation of \
+In[79]:=",ExpressionUUID->"1bdf557a-9701-4de2-926b-cae6968e9a5f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "ifun", 
+   "\"Inverse functions are being used by \
+\\!\\(\\*RowBox[{\\\"Solve\\\"}]\\), so some solutions may not be found; use \
+Reduce for complete solution information.\"", 2, 79, 30, 20584805842784696934,
+    "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.914130503666123*^9, 3.914130802072753*^9},
+ CellLabel->
+  "During evaluation of \
+In[79]:=",ExpressionUUID->"09d90b7f-3ba0-40ce-93db-93932e0670ca"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Theta]", "[", "\[Xi]", "]"}], "\[Rule]", 
+     FractionBox[
+      RowBox[{"Sin", "[", "\[Xi]", "]"}], "\[Xi]"]}], "}"}], "}"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]"}]], \
+"Input",
+ CellChangeTimes->{{3.914156420689497*^9, 
+  3.91415644017253*^9}},ExpressionUUID->"e5c4c904-66e4-4bc8-88fb-\
+bdb9cf2330e6"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.914130072481144*^9, 
+  3.9141300738754787`*^9}},ExpressionUUID->"00c7b992-c49c-4268-980a-\
+67e563c9e398"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.914130075249352*^9, 3.9141301030669327`*^9}},
+ NumberMarks->False,ExpressionUUID->"16899a19-95c6-41e5-a94b-cf2214da3d87"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{
+  3.91413015339355*^9},ExpressionUUID->"dfdc3e05-1b55-4329-b827-213fcb596615"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Sum", "div", "\:f3b5Sum does not converge.\:f3b5", 2, 65, 18, 
+   20584805842784696934, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{{3.9141300713722153`*^9, 3.914130106188657*^9}, {
+  3.914130524389921*^9, 
+  3.914130524544608*^9}},ExpressionUUID->"a994ef26-c07b-4c4e-bb79-\
+172a8de7123d"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.91413008211897*^9, 
+  3.914130082129208*^9}},ExpressionUUID->"22ea2b62-a774-4241-b86c-\
+11f4a729f254"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.914129678889804*^9, 3.914129678898204*^9}, {
+  3.914129744027968*^9, 
+  3.914129760169075*^9}},ExpressionUUID->"a88fbb69-c930-4a0a-8c48-\
+3e41408b0d03"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.914128564545598*^9, 
+  3.91412858606392*^9}},ExpressionUUID->"f213c03c-f0bc-4040-b699-\
+32885baeacf2"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.914128576404326*^9, 
+  3.914128595075035*^9}},ExpressionUUID->"16393305-b6e0-4ae7-8a1a-\
+859408d6e383"],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"5e4bdd2b-b2b5-41d0-8dc9-534c68bafac8"]
+},
+WindowSize->{808, 684},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"13.1 for Mac OS X ARM (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"857ecdfb-a972-4d09-a2c9-afdbf2eb12ed"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1106, 26, 30, "Input",ExpressionUUID->"e6ede73a-b299-424c-a0f5-a1097011b286"],
+Cell[1667, 48, 819, 23, 54, "Input",ExpressionUUID->"8dbbe393-984a-474e-a9a5-a20ced05737f"],
+Cell[2489, 73, 297, 5, 30, "Input",ExpressionUUID->"10924578-cd5e-4fa0-a6ea-b5833d76ab94"],
+Cell[2789, 80, 1227, 33, 52, "Input",ExpressionUUID->"6e6d7632-adb2-407f-98c5-98639a08ed66"],
+Cell[4019, 115, 1057, 27, 54, "Input",ExpressionUUID->"388229e5-6803-43a7-9d32-2721d2547434"],
+Cell[CellGroupData[{
+Cell[5101, 146, 978, 25, 33, "Input",ExpressionUUID->"4cd24abb-1a66-4fed-a500-8cc08cb20628"],
+Cell[6082, 173, 308, 8, 53, "Output",ExpressionUUID->"3100d7af-b606-4f38-aece-56308337075b"]
+}, Open  ]],
+Cell[6405, 184, 1367, 38, 98, "Input",ExpressionUUID->"418d0068-c9a8-4cf4-a282-32e440a97af4"],
+Cell[7775, 224, 299, 8, 51, "Input",ExpressionUUID->"762a149f-d27a-4da0-b838-3f250b865588"],
+Cell[CellGroupData[{
+Cell[8099, 236, 1110, 30, 33, "Input",ExpressionUUID->"4292fde5-f137-4c7b-ad0e-ac83c588d267"],
+Cell[9212, 268, 655, 13, 28, "Message",ExpressionUUID->"7e2e32d4-493e-4db2-a112-1fb61e815594"],
+Cell[9870, 283, 575, 12, 28, "Message",ExpressionUUID->"91ad4779-f9cc-4be9-bdcd-cecb524a0df2"],
+Cell[10448, 297, 452, 11, 46, "Message",ExpressionUUID->"2e484169-17f3-429c-af5c-8981064a35f7"],
+Cell[10903, 310, 686, 18, 56, "Output",ExpressionUUID->"3d3f9a11-89a0-4cf9-bcd0-1ef98a032f0e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11626, 333, 1377, 34, 56, "Input",ExpressionUUID->"58fa2041-4aee-4e6a-9453-4c16b1c7b570"],
+Cell[13006, 369, 675, 13, 28, "Message",ExpressionUUID->"60f5fee5-8c43-4d8f-a536-8fdbc9ed43b4"],
+Cell[13684, 384, 597, 12, 28, "Message",ExpressionUUID->"1bdf557a-9701-4de2-926b-cae6968e9a5f"],
+Cell[14284, 398, 474, 11, 46, "Message",ExpressionUUID->"09d90b7f-3ba0-40ce-93db-93932e0670ca"]
+}, Open  ]],
+Cell[14773, 412, 424, 12, 116, InheritFromParent,ExpressionUUID->"e5c4c904-66e4-4bc8-88fb-bdb9cf2330e6"],
+Cell[15200, 426, 154, 3, 30, "Input",ExpressionUUID->"00c7b992-c49c-4268-980a-67e563c9e398"],
+Cell[15357, 431, 170, 2, 30, "Input",ExpressionUUID->"16899a19-95c6-41e5-a94b-cf2214da3d87"],
+Cell[CellGroupData[{
+Cell[15552, 437, 144, 2, 52, "Input",ExpressionUUID->"dfdc3e05-1b55-4329-b827-213fcb596615"],
+Cell[15699, 441, 397, 10, 28, "Message",ExpressionUUID->"a994ef26-c07b-4c4e-bb79-172a8de7123d"]
+}, Open  ]],
+Cell[16111, 454, 151, 3, 30, "Input",ExpressionUUID->"22ea2b62-a774-4241-b86c-11f4a729f254"],
+Cell[16265, 459, 201, 4, 30, "Input",ExpressionUUID->"a88fbb69-c930-4a0a-8c48-3e41408b0d03"],
+Cell[16469, 465, 151, 3, 30, "Input",ExpressionUUID->"f213c03c-f0bc-4040-b699-32885baeacf2"],
+Cell[16623, 470, 152, 3, 30, "Input",ExpressionUUID->"16393305-b6e0-4ae7-8a1a-859408d6e383"],
+Cell[16778, 475, 81, 0, 30, "Input",ExpressionUUID->"5e4bdd2b-b2b5-41d0-8dc9-534c68bafac8"]
+}
+]
+*)
+
